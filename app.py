@@ -4,7 +4,7 @@ from PIL import Image
 
 # --- CẤU HÌNH ---
 # Thay 'API_KEY_CUA_BAN' bằng mã bạn vừa lấy ở bước 1
-API_KEY = "AIzaSyA_XUXSQlpXcJHRe9CLy1ecFlHhxNU_1jc" 
+API_KEY = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # Chọn mô hình Gemini có khả năng nhìn ảnh (Flash là nhanh nhất)
